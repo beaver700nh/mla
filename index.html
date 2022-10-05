@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MLA Skeleton Generator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <p id="title">MLA Skeleton Generator</p>
+      <div id="boxes">
+        <abbr title="Your first and last name.">
+          YOUR NAME:
+        </abbr>
+        <input type="text" id="your-name" autocomplete="off" autofill="off" />
+        <abbr title="Your teacher's first and last name.">
+          YOUR TEACHER'S NAME:
+        </abbr>
+        <input type="text" id="teacher-name" autocomplete="off" autofill="off" />
+        <abbr title="e.g. English, Biology, etc.">
+          SUBJECT NAME:
+        </abbr>
+        <input type="text" id="subj-name" autocomplete="off" autofill="off" />
+        <abbr title="The date you finished writing the paper.">
+          DATE OF COMPLETION:
+        </abbr>
+        <input type="date" id="the-date" />
+        <abbr title="The title to put in the heading.">
+          THE PAPER TITLE:
+        </abbr>
+        <input type="text" id="the-title" autocomplete="off" autofill="off" />
+      </div>
+      <button id="generate" onclick="generate()">GENERATE</button>
+    </div>
+    <div id="modal-box">
+      <div id="modal-content">
+        <p id="modal-title"></p>
+        <p id="output"></p>
+        <button id="modal-close" onclick="modal_close();">Close</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--
+
+<div
+  style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;"
+>
+  <p
+    style="font-size: 12pt; font-weight: 400; line-height: 200%; margin-bottom: 0em; margin-top: 0px; text-align: center;"
+  >
+    Works Cited
+  </p>
+  <p
+    style="line-height: 200%; margin-bottom: 0em; margin-top: 0px; padding-left: 36pt; text-indent: -36pt; word-break: break-word;"
+  >
+    Akhter, Akhtaruzzaman, and Amir Shafie. “Geometrical Substantiation of Phi, the Golden Ratio and the Baroque of Nature, Architecture, Design and Engineering.”
+    <i>Academia</i>, 1 Jan. 2011, SUPER_LONG_URL. Accessed 26 Sept. 2022.
+  </p>
+  <p
+    style="line-height: 200%; margin-bottom: 0em; margin-top: 0px; padding-left: 36pt; text-indent: -36pt; word-break: break-word;"
+  >
+    Biller, Jerry. “Math in Art or Art in Math.”
+    <i>ERIC</i>, 1 Oct. 1995, eric.ed.gov/?id=ED405907. Accessed 14 Sept. 2022.
+  </p>
+  <p
+    style="line-height: 200%; margin-bottom: 0em; margin-top: 0px; padding-left: 36pt; text-indent: -36pt; word-break: break-word;"
+  >
+    Cortes, Kalena, et al. “A Double Dose of Algebra: Intensive Math Instruction Has Long-Term Benefits.”
+    <i>Gale Academic Onefile</i>, Hoover Institution Press, 2013, LONG_URL. Accessed 14 Sept. 2022.
+  </p>
+  etc...
+</div>
+
+-->
